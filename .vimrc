@@ -39,3 +39,4 @@ nnoremap <C-H> <C-W><C-H>
 nnoremap <C-T> :vsplit<CR>
 nnoremap <C-W> :q<CR>
 colorscheme atom-dark-256
+set colorcolumn=80
