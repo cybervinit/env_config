@@ -1,3 +1,4 @@
+set noswapfile
 set t_Co=256
 filetype plugin indent on
 " On pressing tab, insert 2 spaces
@@ -19,6 +20,7 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'google/vim-jsonnet'
 Plugin 'joshdick/onedark.vim'
 Plugin 'ycm-core/YouCompleteMe'
+Plugin 'davidhalter/jedi-vim'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -31,6 +33,7 @@ set statusline=%F
 set laststatus=2
 
 " Start NERDTree
+let NERDTreeShowHidden=1
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if !exists("s:std_in") | NERDTree | endif
 
